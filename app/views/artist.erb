@@ -11,6 +11,11 @@
       background: url("http://i66.tinypic.com/2nbee6x.jpg"), purple;
       background: url("http://i66.tinypic.com/2nbee6x.jpg"), -webkit-linear-gradient(to left, purple, blue);
       background: url("http://i66.tinypic.com/2nbee6x.jpg"), linear-gradient(to left, purple, blue);
+  
+      
+    }
+    a {
+      color: yellow;
     }
     
     * {
@@ -39,19 +44,22 @@
    <body>
     <div class="column">
       <div class="row">
-    <h1>Artist: </h1>
+    <h1>Artist: <b> <%=@artist['name']%> </b></h1>
       <br>
           <br>
           <br>   
           <p><b>genre: </b><%=@genre%>
-          name: <%=@name%>
+          <br><b>instagram: </b> <a href= "https://www.instagram.com/<%=@artist['insta']%>/?hl=en"><%=@artist['insta']%> </a>
+          <br><b>twitter: </b> <a href= "https://www.twitter.com/<%=@artist['twitter']%>"><%=@artist['twitter']%> </a>
+          <br><b>listen to: </b><%=@artist['song']%>
+          
           
           
           <b></b>
                
       <br>
       <br>
-      Major Key’s approach to solving this issue is to start with the listener. By encouraging listeners to support female artists, we can start bridging the gender gap in music. We want to support the female community and also empower young females to pursue careers in music. 
+      <b>biography: </b> <%=@artist['bio']%>
       <br><br>
 </p>
 

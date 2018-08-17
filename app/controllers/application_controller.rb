@@ -20,12 +20,15 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/artist' do
-
     @genre= params[:genre]
-    # artist = Artists.new
-    # @name = artist.select
-
+    artists = Artist.new.all
+    @artist = Artist.new.select_artist(artists, @genre)
     erb :artist
   end
+  
+  # get '/instagram.com/artist["insta"]' do
+  #   instagram.com/
+  # end
+ 
 end
 
