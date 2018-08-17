@@ -443,6 +443,14 @@ def all
 
 end
 
+# def select
+#   all.shuffle
+#   counter = 0
+#     until @genre == all["genre"]
+#     counter += 1 
+#     end
+#   return counter
+# end
 
 # def select(params[:genre])
 # artists.all.shuffle.find |artist|

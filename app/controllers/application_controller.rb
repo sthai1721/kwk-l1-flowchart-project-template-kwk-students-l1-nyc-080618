@@ -22,6 +22,8 @@ class ApplicationController < Sinatra::Base
   get '/artist' do
 
     @genre= params[:genre]
+    # artist = Artists.new
+    # @name = artist.select
 
     erb :artist
   end
