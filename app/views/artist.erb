@@ -44,10 +44,15 @@
    <body>
     <div class="column">
       <div class="row">
+        <p>
+            <img src="<%=@artist['img']%>" style=height:100px>
+            <br>
+            </p>
+           
     <h1>Artist: <b> <%=@artist['name']%> </b></h1>
       <br>
-      <!--<img src="<%=@artist['img']%>" style=height:100px>-->
-          <br>
+  
+      <br>
           <br>   
           <p><b>genre: </b><%=@genre%>
           <br><b>instagram: </b> <a href= "https://www.instagram.com/<%=@artist['insta']%>/?hl=en"><%=@artist['insta']%> </a>
