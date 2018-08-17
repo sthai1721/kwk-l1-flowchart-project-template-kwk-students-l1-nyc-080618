@@ -46,12 +46,13 @@
       <div class="row">
     <h1>Artist: <b> <%=@artist['name']%> </b></h1>
       <br>
+      <!--<img src="<%=@artist['img']%>" style=height:100px>-->
           <br>
           <br>   
           <p><b>genre: </b><%=@genre%>
           <br><b>instagram: </b> <a href= "https://www.instagram.com/<%=@artist['insta']%>/?hl=en"><%=@artist['insta']%> </a>
           <br><b>twitter: </b> <a href= "https://www.twitter.com/<%=@artist['twitter']%>"><%=@artist['twitter']%> </a>
-          <br><b>listen to: </b><%=@artist['song']%>
+          <br><b>listen to: </b><a href= "https://open.spotify.com/artist/<%=@artist['id']%>"> <%=@artist['song']%> </a>
           
           
           
@@ -62,6 +63,7 @@
       <b>biography: </b> <%=@artist['bio']%>
       <br><br>
 </p>
+        
 
   </body>
 </html>
