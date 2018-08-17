@@ -1,13 +1,7 @@
-class Artists 
-  
-  
-  
 # artist hash 
 # integer => name, spotify id, insta, twitter
-
+class Artists
 def all
-
-all_artists=
 [
 
   {
@@ -129,6 +123,7 @@ all_artists=
   "twitter" => "carrieunderwood",
   "song" => "The Champion"
 },
+
 
 {
   "genre" => "pop",
@@ -445,7 +440,13 @@ all_artists=
     "song" => "Video Games"
   }
 ]
+
 end
 
 
+# def select(params[:genre])
+# artists.all.shuffle.find |artist|
+# @genre == artist[:genre]
+# end
 
+end

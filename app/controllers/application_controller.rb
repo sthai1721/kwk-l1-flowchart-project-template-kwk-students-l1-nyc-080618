@@ -20,7 +20,9 @@ class ApplicationController < Sinatra::Base
   end
   
   get '/artist' do
-    #puts params[:genre]
+
+    @genre= params[:genre]
+
     erb :artist
   end
 end
