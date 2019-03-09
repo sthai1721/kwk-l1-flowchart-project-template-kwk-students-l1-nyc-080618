@@ -26,9 +26,6 @@ class ApplicationController < Sinatra::Base
     erb :artist
   end
   
-  # get '/instagram.com/artist["insta"]' do
-  #   instagram.com/
-  # end
  
 end
 
